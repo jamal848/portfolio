@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Certificate Display</title>
+  <style>
+    /* Reset and eliminate default page spaces */
+    * {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      box-sizing: border-box;
+    }
+
+    /* Fullscreen flexbox canvas to align items perfectly dead center */
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      background-color: #0f0f11; /* Dark theme backdrop matching your portfolio styling */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    /* Fixed bounding box frame layout wrapper */
+    .certificate-wrapper {
+      max-width: 900px;
+      width: 100%;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #2c2c35 0%, #18181c 100%);
+      padding: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Fully fluid image target bound within safe responsive boundaries */
+    .certificate-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      object-fit: contain;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Perfectly Centered Canvas Wrapper Box -->
+  <div class="certificate-wrapper">
+    <img src="C:\Users\ASUS\Desktop\projects\my portfolio\assets\images\internship.jpeg" 
+      alt="RAM Innovative Infotech Internship Certificate - Mohd. Abdul Jamal" 
+      class="certificate-img"
+    >
+  </div>
+
+</body>
+</html>

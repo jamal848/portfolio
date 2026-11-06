@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Major Project Details</title>
+  <style>
+    /* Reset and Typography Setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      background-color: #0f0f11; /* Dark theme backdrop matching your layout */
+      font-family: sans-serif;
+      color: #d6d6d6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      overflow-x: hidden;
+    }
+
+    /* Container Box matching your card style */
+    .project-container {
+      max-width: 800px;
+      width: 100%;
+      background: linear-gradient(135deg, #2c2c35 0%, #18181c 100%);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      padding: 24px;
+    }
+
+    /* Top Link to Go Back */
+    .back-btn {
+      display: inline-block;
+      color: #ffdb6e; /* Yellow accent matching template */
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 20px;
+      transition: opacity 0.2s ease;
+    }
+    
+    .back-btn:hover {
+      opacity: 0.8;
+    }
+
+    /* FIXED: Scrollable Frame Wrapper Box */
+    .project-banner-scrollable {
+      width: 100%;
+      height: 400px; /* Fixed height frame viewport box */
+      border-radius: 12px;
+      overflow-y: auto; /* Enables vertical scrolling for long images */
+      overflow-x: hidden; /* Disables unwanted horizontal layout breaking */
+      background: rgba(0, 0, 0, 0.4);
+      margin-bottom: 24px;
+      box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Custom Premium Scrollbar for WebKit Browsers (Chrome, Safari, Edge) */
+    .project-banner-scrollable::-webkit-scrollbar {
+      width: 8px;
+    }
+    .project-banner-scrollable::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 0 12px 12px 0;
+    }
+    .project-banner-scrollable::-webkit-scrollbar-thumb {
+      background: #ffdb6e; /* Yellow scroll track matching theme accent */
+      border-radius: 4px;
+    }
+    .project-banner-scrollable::-webkit-scrollbar-thumb:hover {
+      background: #e5c462;
+    }
+
+    /* Target Image behavior inside the viewport container */
+    .project-banner-scrollable img {
+      width: 100%;
+      height: auto; /* Allows height to expand naturally to trigger internal scrolling */
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Text Formatting */
+    .project-header-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #9e9e9e;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .dot {
+      background: #9e9e9e;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+    }
+
+    .project-title {
+      font-size: 28px;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .project-description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #d6d6d6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-container">
+    <!-- Back to index link layout target -->
+    <a href="index.html" class="back-btn">&larr; Back to Portfolio</a>
+
+    <!-- FIXED: Scrollable Container Wrapper Section -->
+    <div class="project-banner-scrollable">
+      <img src="C:\Users\ASUS\Desktop\projects\my portfolio\assets\images\major pro.jpeg" alt="Major Project Detail View">
+    </div>
+
+    <!-- Info Section -->
+    <div class="project-content">
+      <div class="project-header-meta">
+        <span>Projects</span>
+        <span class="dot"></span>
+        <time datetime="2026-04-22">Apr 22, 2026</time>
+      </div>
+
+      <h1 class="project-title">Major Project</h1>
+      
+      <p class="project-description">
+        This is my major project that I worked on during my studies.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
